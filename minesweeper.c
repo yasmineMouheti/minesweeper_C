@@ -1,8 +1,14 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
-#include "minesweeper.h"
 
+typedef struct {
+    int value;
+    int is_mine;
+    int is_boombed;
+    int is_visited;
+    int is_flagged;
+} Node;
 // initialisation
 void add_matrix(Node **tab, int l, int c) {
     // Fill the matrix with null values
