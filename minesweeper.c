@@ -148,7 +148,7 @@ void play_game(Node **tab, int l, int c) {
                 break;
         }
 
-        Show_all(tab, l, l);
+        Show_all(tab, l, c);
     } while (is_lose != 0);
 }
 
